@@ -1,4 +1,0 @@
-
-function createPost() {}
-
-function createPosts() {}
