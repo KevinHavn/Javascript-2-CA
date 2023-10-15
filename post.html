@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Post | The Connectiverse</title>
+		<meta
+			name="description"
+			content="This page displays a single post, and allows the user to view details." />
+		<link rel="stylesheet" href="dist/css/styles.css" />
+		<script src="src\javascript\index.mjs" defer type="module"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md bg-primary">
+				<div class="container-fluid">
+					<h2 class="navbar-brand">
+						<a href="index.html" class="nav-link">Connectiverse</a>
+					</h2>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="feed.html">Feed</a>
+							</li>
+							<li class="nav-item dropdown"></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="my-5 d-flex justify-content-center">
+			<div class="bg-primary p-2 card justify-content-center">
+				<h1 class="toast-header">What would you like to change?</h1>
+				<form id="updateForm" class="d-flex flex-column">
+					<div>
+						<label for="Title" class="form-label">Post Title</label>
+						<input
+							type="text"
+							id="title"
+							class="form-control"
+							name="title"
+							placeholder="Post title"
+							aria-label="Write a new title here"
+							required
+							maxlength="30" />
+					</div>
+
+					<label for="updateMedia" class="form-label mt-2"
+						>New Media (Optional)</label
+					>
+
+					<input
+						class="form-control"
+						type="url"
+						id="Media"
+						name="media"
+						placeholder="Media URL link (optional)"
+						aria-label="Media URL link (optional)" />
+					<label for="updateBody" class="form-label mt-2"
+						>Post Message (Minimum 5 letters)</label
+					>
+
+					<textarea
+						class="form-control"
+						id="body"
+						placeholder="Write a new post!"
+						value="Text field for writing new post message"
+						aria-label="Write new post message here"
+						name="body"
+						required
+						minlength="5"
+						required
+						maxlength="100"></textarea>
+					<button type="submit" class="btn btn-info my-2">
+						Submit changes
+					</button>
+				</form>
+			</div>
+		</main>
+		<footer class="bg-primary d-flex p-3 fixed-bottom justify-content-center">
+			<h2 class="navbar-brand">Designed and developed by Kevin Havn</h2>
+		</footer>
+	</body>
+</html>
